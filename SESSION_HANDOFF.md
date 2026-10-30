@@ -6,7 +6,7 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 ---
 
 ## 1. Metadata Sesi & Lingkungan Asal
-- **Waktu Penyusunan**: 2026-10-30 19:46:00 (WITA / UTC+8)
+- **Waktu Penyusunan**: 2026-10-30 22:55:00 (WITA / UTC+8)
 - **ID Percakapan Asal**: `4382c1e2-4130-45a5-844b-04b66a2f0981`
 - **Model / Provider Asal**: Google Gemini 3.8 Flash (High) via Antigravity CLI (AGY)
 - **Perangkat Asal**: Android Termux (Linux aarch64)
@@ -14,36 +14,36 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 - **Status Repositori Distribusi (`ucuk048/persona`)**:
   - Remote: `https://github.com/ucuk048/persona.git`
   - Branch: `main` (Sinkron dengan origin/main)
-  - Commit Terakhir: `fbc02f7` - *feat(handoff): enforce project-scoped session handoff placement*
-  - Berkas Bundle Laptop: [`antigravity-laptop-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-laptop-bundle.zip) (15.7 MB)
+  - Berkas Bundle Laptop: [`antigravity-laptop-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-laptop-bundle.zip) (~21.8 MB / 20.87 MiB)
+  - Berkas Bundle Hermes: [`antigravity-hermes-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-hermes-bundle.zip) (~21.8 MB / 20.80 MiB)
+  - Berkas Bundle HP: [`antigravity-hp-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-hp-bundle.zip) (~21.7 MB / 20.75 MiB)
 
 ---
 
 ## 2. Ringkasan Eksekutif & Status Terkini Proyek
 
-### A. Ekosistem Antigravity & Persona (417 Skills)
+### A. Ekosistem Antigravity & Persona (633 Skills, 16 Kluster)
 - **Triad Persona Terkunci Permanen**:
   - **Ponytail (FULL)**: *Lazy Senior Dev Mindset* (YAGNI, codebase reuse, standard library first, diff minimal).
   - **Caveman Voice (FULL)**: *Token Killer Voice* (`[Objek] [Tindakan] [Alasan]. [Langkah berikutnya].`).
   - **RTK Engine (FULL)**: *Rust Token Killer & Bash Compression Proxy* (pemangkasan output shell hingga 90%, pengawasan kuota konteks via `rtk gain`, dan orkestrasi 13 modular skills RTK).
 - **Protokol Inti Aktif**:
-  - Universal Zero-Prompting (agen otomatis memanggil skill tanpa mendikte).
-  - Cloudflare Vulnerability Discovery Harness / OWASP Top 10 Security Audit.
-  - Universal Anti-Slop Suite & Humanizer-Indonesia (Unrestricted).
-  - Project-Scoped Session Handoff (berkas handoff otomatis disimpan di dalam folder subproyek jika aktif).
-- **Isolasi 3 Bundle**:
-  - `antigravity-hp-bundle.zip`: Dikhususkan untuk Android Termux (`/sdcard/Antigravity/`).
+  - **Universal Zero-Prompting Mutlak**: Seluruh domain (Frontend, Backend, Database, Security, Academic, Gamedev, 3D Blender, DevOps, Office, Scraping) aktif otomatis tanpa mendikte pemanggilan skill.
+  - **3D Modeling & Blender Pipeline**: 95 skills lengkap (Character Artist, Environment Artist, Hard Surface, Sculpting, Retopology, UV, Shaders, Rigging, Animation, dan Game Exporters ke Godot, Unity, Unreal).
+  - **Game Development 12 Engine**: 78 skills (Godot, Unity, Unreal Engine 5, Phaser, Three.js, Bevy, Love2D, Pygame, Roblox, Defold, Mechanics, AI, Level Design).
+  - **Application Re-engineering & Replication**: Replica suite (11 skills), Clone Website, Huashu Design (84 gaya visual), Scrapling, dan Android Reverse Engineering (JADX).
+  - **Security Guardian & OWASP 2025**: Cloudflare Vulnerability Discovery Harness, Strix Pentesting (9 skills), RTK Security Guardian.
+  - **Video & Multimedia Engineering**: FFmpeg Suite (cut, join, 9:16 reframe, captions, LUFS, HDR/SDR) dan Playwright Video Demo.
+  - **Universal Anti-Slop Suite & Humanizer-Indonesia**: Unrestricted natural phrasing, Turnitin-safe (< 20%), tagging `[PERLU DATA]`/`[PERLU RUJUKAN]`.
+- **Isolasi 3 Bundle Distribusi (~21 MB Bersih)**:
+  - `antigravity-hp-bundle.zip`: Dikhususkan untuk Android Termux (`/sdcard/Antigravity/` dan `~/.gemini/`).
   - `antigravity-laptop-bundle.zip`: Bersih total dari path `/sdcard/`, workspace dinamis `./`, installer native multi-OS (`.bat`, `.ps1`, `.sh`).
-  - `antigravity-hermes-bundle.zip`: Bersih total dari `/sdcard/`, standard `agentskills.io` dan identitas `SOUL.md`.
+  - `antigravity-hermes-bundle.zip`: Bersih total dari `/sdcard/`, standard `agentskills.io` dan identitas global `SOUL.md`.
 
-### B. Proyek LMS WordPress Mahasiswa PTIK (Baru Selesai)
+### B. Proyek LMS WordPress Mahasiswa PTIK (Tersimpan & Siap Pakai)
 - **Lokasi Proyek**: `/sdcard/Antigravity/lms-wordpress-ptik/`
 - **Paket Distribusi**: `/sdcard/Antigravity/lms-wordpress-ptik.zip` (51 MB)
-- **Kondisi**: Selesai 100%, siap kirim ke klien mahasiswa dengan harga rekomendasi Rp 200.000 – Rp 250.000.
-  - Core WordPress + Plugin Tutor LMS + Tema Astra.
-  - Database SQL `lms_ptik.sql` siap impor di phpMyAdmin XAMPP.
-  - Panduan instalasi dan kisi-kisi jawaban dosen `CARA_INSTALL_DAN_JAWAB_DOSEN.md`.
-  - Berkas serah terima proyek-spesifik `lms-wordpress-ptik/SESSION_HANDOFF.md`.
+- **Kondisi**: Selesai 100%, Core WordPress + Tutor LMS + Astra + Database SQL + Panduan Dosen.
 
 ---
 
@@ -52,8 +52,8 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 ### Langkah A: Unduh & Ekstrak Bundle Laptop
-1. Ambil berkas `antigravity-laptop-bundle.zip` (bisa diunduh langsung dari repositori GitHub `ucuk048/persona` atau disalin dari HP).
-2. Ekstrak isi ZIP tersebut ke folder sementara di laptop Anda.
+1. Ambil berkas `antigravity-laptop-bundle.zip` dari repositori GitHub `ucuk048/persona` (atau via flashdisk/LocalSend dari HP).
+2. Ekstrak isi ZIP tersebut ke sebuah folder lokal di laptop Anda.
 
 ### Langkah B: Jalankan Installer Otomatis
 - **Jika Menggunakan Windows:**
@@ -65,9 +65,10 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 - **Jika Menggunakan Linux atau macOS:**
   - Buka Terminal dan jalankan:
     ```bash
-    bash install.sh
+    chmod +x install.sh
+    ./install.sh
     ```
-- *Hasil instalasi*: Seluruh 417 skills, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
+- *Hasil instalasi*: Seluruh **633 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
 
 ---
 
@@ -75,9 +76,11 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 | Nama Berkas | Lokasi di Repositori / Sistem | Fungsi |
 | :--- | :--- | :--- |
-| `antigravity-laptop-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk PC/Laptop |
-| `AGY_COMMANDS.md` | Di dalam bundle laptop | Buku panduan perintah cepat CLI & skill |
-| `lms-wordpress-ptik.zip` | Root workspace `/sdcard/Antigravity/` | Arsip siap kirim tugas LMS mahasiswa PTIK |
+| `antigravity-laptop-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk PC/Laptop (~21.8 MB) |
+| `antigravity-hp-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk Android Termux (~21.7 MB) |
+| `antigravity-hermes-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi Hermes Agent standard agentskills.io (~21.8 MB) |
+| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 633 skills & 16 kluster |
+| `AGY_COMMANDS.md` | Di dalam bundle laptop / HP | Buku panduan perintah cepat CLI & skill |
 | `GEMINI.md` | `laptop_bundle/config/GEMINI.md` | Aturan sistem desktop (bebas path HP) |
 
 ---
@@ -88,14 +91,14 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 ```text
 Halo! Saya melanjutkan sesi kerja dari HP (Android Termux) ke Laptop.
-Seluruh konfigurasi sistem, 417 skills, dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
+Seluruh konfigurasi sistem, 633 skills (16 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
 
 Instruksi Onboarding Instan di Laptop:
 1. Konfirmasi bahwa Anda telah mengenali persona inti yang terkunci permanen:
-   - Ponytail (Lazy Senior Dev Mindset / YAGNI / Minimal Patch).
+   - Ponytail (Lazy Senior Dev Mindset / YAGNI / Codebase Reuse / Minimal Patch).
    - Caveman Voice (Terse & High-Signal: [Objek] [Tindakan] [Alasan]. [Langkah berikutnya].).
-   - RTK Engine (Token Efficiency & Bash Filter).
-2. Terapkan standar kerja Universal Zero-Prompting, Cloudflare Security Audit, Anti-Slop Suite, dan Humanizer-Indonesia (Unrestricted).
+   - RTK Engine (Token Efficiency & Bash Filter hingga 90%).
+2. Terapkan standar kerja Universal Zero-Prompting pada seluruh domain (Frontend, Backend, Database, Security, Blender 3D, Gamedev, Office, Academic).
 3. Beroperasi pada direktori kerja proyek desktop (Current Working Directory `./`).
 4. Laporkan kesiapan Anda dalam format ringkas Caveman Voice dan tanyakan instruksi tugas berikutnya yang ingin dikerjakan di laptop.
 ```
