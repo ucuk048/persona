@@ -1,6 +1,6 @@
 # Antigravity Persona & Ecosystem Bundles
 
-Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 505 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
+Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 633 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
 
 Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting**.
 
@@ -8,7 +8,7 @@ Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkunga
 
 ## Ringkasan Fitur Inti
 
-- **505 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
+- **633 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
 - **RTK (Rust Token Killer) Suite**: Mesin reduksi token agnostik-agen berbasis proxy Rust berkinerja tinggi (<10ms overhead). Memangkas volume keluaran terminal/bash hingga 90% melalui deduplikasi cerdas, pemfilteran log verbose, dan pelacakan metrik token (`rtk gain`). Didukung 13 modul spesialisasi teknis (TDD, audit keamanan shell, simplifikasi kode, audit PR).
 - **Universal Zero-Prompting**: Agen secara proaktif mendeteksi kebutuhan konteks tugas dan langsung mengaktifkan modul skill relevan tanpa mengharuskan pengguna mendikte pemanggilan skill satu per satu.
 - **Automated Security Audit (Cloudflare Harness & RTK Guardian)**: Penerapan 20 attack classes, validator, dan checklist OWASP Top 10 langsung dari `cloudflare/security-audit-skill` serta RTK security guardian pada setiap penulisan backend, query database, dan formulir.
@@ -54,7 +54,7 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 | Berkas Bundle | Target Lingkungan | Jalur Instalasi Default | Deskripsi Singkat |
 | :--- | :--- | :--- | :--- |
-| `antigravity-hp-bundle.zip` | Android (Termux) | `~/.gemini/` & `/sdcard/Antigravity/` | Konfigurasi Termux lengkap, 505 skills, GEMINI.md, settings.json, installer shell. |
+| `antigravity-hp-bundle.zip` | Android (Termux) | `~/.gemini/` & `/sdcard/Antigravity/` | Konfigurasi Termux lengkap, 633 skills, GEMINI.md, settings.json, installer shell. |
 | `antigravity-laptop-bundle.zip` | PC / Laptop (Win/macOS/Linux) | `~/.gemini/` (Linux/Mac) atau `%USERPROFILE%\.gemini\` (Win) | Paket desktop untuk Gemini CLI / AGY CLI dengan installer multi-OS (`.bat`, `.ps1`, `.sh`). |
 | `antigravity-hermes-bundle.zip` | Hermes Agent (Nous Research) | `~/.hermes/skills/` & `~/.hermes/SOUL.md` | Konfigurasi runtime Hermes, standard agentskills.io, SOUL.md, dan AGENTS.md. |
 
@@ -71,7 +71,7 @@ Berkas arsip distribusi berada langsung di root repositori:
    .\install.ps1
    ```
    *(Atau klik kanan pada berkas `install.bat` dan pilih **Run as administrator**).*
-4. Konfigurasi dan 505 skills otomatis terpasang pada direktori `C:\Users\<Username>\.gemini\`.
+4. Konfigurasi dan 633 skills otomatis terpasang pada direktori `C:\Users\<Username>\.gemini\`.
 
 ### 2. Instalasi di PC / Laptop (Linux & macOS)
 
@@ -106,25 +106,73 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 ---
 
-## Taksonomi 505 Agent Skills Terpasang
+## Taksonomi 633 Agent Skills Terpasang
 
-Seluruh 505 skills terindeks dan dikelompokkan ke dalam 13 kluster kapabilitas rekayasa:
+Seluruh 633 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas rekayasa:
 
 ```
-505 Skills
-├── 1. Modern UI/UX, Design Intelligence & Motion Suite (PatternCraft, Transitions.dev, Uiverse, Neat, FeralUI, CodedVisuals, Beautiful UI, Taste Skill, Hallmark, UUPM, Craftwork, Ryux)
-├── 2. Security Guardian & Cloudflare Vulnerability Discovery (Cloudflare Security Audit, OWASP Top 10, RTK Security Guardian)
-├── 3. Backend Architecture, REST/GraphQL & Systems (FastAPI, NestJS, Laravel, Django, Go, Spring Boot, Nakama)
-├── 4. Database Engineering, Migrations & Analytics (PostgreSQL, MySQL, Prisma, JPA, ClickHouse)
-├── 5. Game Development & Multi-Engine Suite (Godot 17 skills, Unity 9 skills, Unreal Engine 5, Web Engines Phaser/Three.js, Ebitengine, Bevy, Love2D, Pygame, Roblox, Defold, Gamedev Router, Game Mechanics, Audio, Level Design, Shaders)
-├── 6. Video Engineering, Audio & Demo Walkthrough (FFmpeg Suite: cut, join, 9:16 vertical reframe, captions/karaoke, LUFS loudness, HDR to SDR, multicam sync; Playwright Video Demo)
-├── 7. Academic Suite, Indonesian NLP & Naskah (Humanizer-Indonesia, Bahasa Peneliti, Naskah-ID, Zotero, Pencari-Skripsi)
-├── 8. DevOps, Docker Patterns & Git Governance (Docker Multi-Stage, Git Workflow, Conventional Commits)
-├── 9. Multi-Agent Systems, Harness & DevFleet (ECC Orchestration, Claude DevFleet, DMux, Continuous Agent Loops)
-├── 10. Engineering Rigor, Debugging & Refactoring (Investigate First, Systematic Debugging, Surgical Patch, Safe Refactor)
-├── 11. Testing Strategies & TDD (RTK TDD, TDD Rust, E2E Playwright, Browser QA, Go/Python/Kotlin Testing)
-├── 12. Office Automation & Document Engineering (GenOffice: Word .docx, Excel .xlsx, PowerPoint .pptx, PDF)
-└── 13. Efficiency, Token Killer & Anti-Slop (RTK Master, Ponytail, Caveman Voice, Code Simplifier, Performance, Anti-Slop)
+633 Skills
+├── 1. Modern UI/UX, Design Intelligence & Motion Suite (89 Skills)
+│   ├── PatternCraft, Transitions.dev, Uiverse UI, FireCMS Neat, FeralUI Gradients
+│   ├── CodedVisuals, Beautiful UI, Ryux Design Intelligence, Taste Skill
+│   ├── Hallmark, UI UX Pro Max (192 palettes, 119 UX rules), Craftwork (114 vetted design skills)
+│   └── Impeccable Design Critique & Huashu Design (84 presentation visual styles)
+├── 2. 3D Modeling, Blender Pipeline & Assets (95 Skills)
+│   ├── Blender Director, Modeler, Character Artist, Creature Artist, Environment Artist
+│   ├── Hard Surface, Sculpting, Retopology, UV & Texture Workflows, PBR Materials
+│   ├── Rigging, Animation, Hair Groom, Cloth & Physics Simulation, Geometry Nodes
+│   └── Multi-Engine Production Exporters (blender-godot-export, unity-export, unreal-export)
+├── 3. Game Development & Multi-Engine Suite (78 Skills)
+│   ├── Master Gamedev Router & Architecture Patterns
+│   ├── Godot Engine (17 skills: 2D/3D, Physics, Shaders, Headless Testing, Signals)
+│   ├── Unity Engine (9 skills: C# Scripting, NavMesh, Tilemaps, Physics, Animation)
+│   ├── Unreal Engine 5 (Enhanced Input, Blueprints, C++ Gameplay, Niagara VFX)
+│   └── Web & Indie Engines (Phaser, Three.js, Bevy ECS, Ebitengine, Love2D, Pygame, Roblox, Defold)
+├── 4. Application Re-engineering & Web Replication (13 Skills)
+│   ├── Replica Suite (11 skills: Architect, Recon, Reverse, Backend, Frontend, Diff, Test, Launch)
+│   ├── Clone Website (Pixel-perfect web page, asset, and motion reverse engineering)
+│   └── Huashu Interactive Canvas & High-Fidelity UI Prototyping
+├── 5. Video Engineering, Audio & Demo Walkthrough (2 Skills)
+│   ├── FFmpeg Suite (Deterministic local editing: cut, join, 9:16 reframe, captions, LUFS, HDR/SDR)
+│   └── Video Demo (Playwright browser walkthrough recording with natural pacing & visible cursor)
+├── 6. Security Guardian & Advanced Pentesting / OWASP 2025 (28 Skills)
+│   ├── Strix Pentesting Suite (9 skills: OWASP Top 10:2025, API & Web App Security Testing, CI Scanning)
+│   ├── Cloudflare Vulnerability Discovery Harness (Official Cloudflare 20 attack classes)
+│   └── Security Guardian, Security Review & RTK Shell Escaping Hardening
+├── 7. Backend Architecture, REST/GraphQL & Systems (17 Skills)
+│   ├── Modular Layered Controller-Service-Repository-Interface Architecture
+│   ├── Framework Specialists (FastAPI, NestJS, Laravel, Django, Go, Spring Boot, Nakama Real-time)
+│   └── API Design, Error Handling, and Redis Caching Patterns
+├── 8. Database Engineering, Migrations & Analytics (6 Skills)
+│   ├── PostgreSQL, MySQL, Prisma ORM, JPA Patterns
+│   └── Reversible Zero-Downtime Migrations & ClickHouse Analytical Optimization
+├── 9. Academic Suite, Indonesian NLP & Naskah (14 Skills)
+│   ├── Humanizer-Indonesia (Unrestricted natural phrasing) & Bahasa Peneliti
+│   ├── Naskah-ID, Pencari-Skripsi, Zotero Reference Integration & APA 7th Edition Tagging
+│   └── Turnitin-Safe Structural Paraphrasing (< 20% similarity floor)
+├── 10. DevOps, Docker Patterns & Git Governance (24 Skills)
+│   ├── Multi-Stage Minimal Alpine/Distroless Dockerfiles & Docker Compose with Healthchecks
+│   └── Git Workflow, Branching Strategy & Caveman Conventional Commits
+├── 11. Multi-Agent Systems, Harness & DevFleet (43 Skills)
+│   ├── Claude DevFleet, DMux Multi-Session Workflows, ECC Orchestration
+│   └── Continuous Autonomous Loops, Evaluator Gates & Subagent Decomposition
+├── 12. Engineering Rigor, Debugging & Refactoring (27 Skills)
+│   ├── Investigate-First, Systematic Debugging & Root-Cause Tracing
+│   └── Surgical Patch (narrowest diff blast radius) & Verify-and-Stop Protocols
+├── 13. Testing Strategies & TDD (25 Skills)
+│   ├── RTK TDD & Rust TDD (Arrange-Act-Assert, snapshot assertions)
+│   └── Multi-Stack Unit & Integration Testing (PyTest, Pest, JUnit 5, Go, xUnit, Playwright E2E)
+├── 14. Mobile, Android Reverse Engineering & Hardware (7 Skills)
+│   ├── Android Reverse Engineering (JADX decompilation, network tracing, endpoint extraction)
+│   └── Android TV Detox, React Native & Mobile Layout Ergonomics
+├── 15. AI Memory Continuity, Brand Systems & Scrapers (10 Skills)
+│   ├── AI Memory Suite (7 skills: durable pages, handoff, cross-session retrieval, maintenance)
+│   ├── Brand Design MD (86 world-class brand design system references)
+│   ├── Logo Design Skill (Geometric SVG vector generation with 1,400+ curated references)
+│   └── Scrapling (Anti-bot stealth HTTP spider & JS rendering scraping engine)
+└── 16. Office Automation & Domain Productivity (155 Skills)
+    ├── GenOffice (Programmatic Word .docx, Excel .xlsx, PowerPoint .pptx, PDF manipulation)
+    └── Enterprise Business, Legal, Logistics & Domain Task Automation Modules
 ```
 
 ---
@@ -139,7 +187,7 @@ Lalu ketik perintah bantuan atau status:
 ```
 /skills
 ```
-Pastikan seluruh 505 skills terdeteksi aktif dengan status permission `always-proceed`.
+Pastikan seluruh 633 skills terdeteksi aktif dengan status permission `always-proceed`.
 
 ---
 
@@ -161,6 +209,16 @@ Skrip ini otomatis memvalidasi integritas `SKILL.md`, menyusun ulang `skills.jso
 ## Lisensi & Atribusi
 
 Paket konfigurasi dan kumpulan skill ini mengintegrasikan repositori open-source resmi:
+- [Blender Skills by arjun988](https://github.com/arjun988/blender-skills) (Complete 95-Skill 3D Modeling, Shading, Rigging & Engine Export Pipeline)
+- [Replica Skill by Jakeschincariol](https://github.com/Jakeschincariol/replica-skill) (Autonomous Full-Stack System Replication & Web App Reverse Engineering)
+- [Strix by usestrix](https://github.com/usestrix/strix) (Autonomous Application Security & OWASP Top 10:2025 Testing Harness)
+- [Android Reverse Engineering Skill by SimoneAvogadro](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) (APK/AAR Reverse Engineering & UI Network Tracing)
+- [Logo Design Skill by kaankiziltug](https://github.com/kaankiziltug/logo-design-skill) (Geometric SVG Logo Design & 1,400+ Curated References)
+- [Huashu Design by alchaincyf](https://github.com/alchaincyf/huashu-design) (High-Fidelity HTML Canvas Interfaces & 84 Visual Presentation Styles)
+- [AI Website Cloner Template by JCodesMore](https://github.com/JCodesMore/ai-website-cloner-template) (Production Web Page & Interaction Cloning)
+- [AI Memory by akitaonrails](https://github.com/akitaonrails/ai-memory) (Long-term Context Retention, Durable Pages & Cross-Session Handoff)
+- [Scrapling by D4Vinci](https://github.com/D4Vinci/Scrapling) (Undetectable HTTP/Spider Web Scraping Engine)
+- [Awesome Design MD by VoltAgent](https://github.com/VoltAgent/awesome-design-md) (Curated 86 Brand Design Systems)
 - [FFmpeg Skill by kajisho5](https://github.com/kajisho5/ffmpeg-skill) (Deterministic Local FFmpeg Audio & Video Editing Suite)
 - [Video Demo by nilbuild](https://github.com/nilbuild/video-demo) (Playwright Web Application Demo & Walkthrough Video Generator)
 - [Awesome GameDev Agent Skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) (Multi-Engine & Game Development Agent Skills)
