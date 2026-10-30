@@ -1,6 +1,6 @@
 # Antigravity Persona & Ecosystem Bundles
 
-Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 424 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
+Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 503 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
 
 Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting**.
 
@@ -8,7 +8,7 @@ Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkunga
 
 ## Ringkasan Fitur Inti
 
-- **424 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
+- **503 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
 - **RTK (Rust Token Killer) Suite**: Mesin reduksi token agnostik-agen berbasis proxy Rust berkinerja tinggi (<10ms overhead). Memangkas volume keluaran terminal/bash hingga 90% melalui deduplikasi cerdas, pemfilteran log verbose, dan pelacakan metrik token (`rtk gain`). Didukung 13 modul spesialisasi teknis (TDD, audit keamanan shell, simplifikasi kode, audit PR).
 - **Universal Zero-Prompting**: Agen secara proaktif mendeteksi kebutuhan konteks tugas dan langsung mengaktifkan modul skill relevan tanpa mengharuskan pengguna mendikte pemanggilan skill satu per satu.
 - **Automated Security Audit (Cloudflare Harness & RTK Guardian)**: Penerapan 20 attack classes, validator, dan checklist OWASP Top 10 langsung dari `cloudflare/security-audit-skill` serta RTK security guardian pada setiap penulisan backend, query database, dan formulir.
@@ -54,7 +54,7 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 | Berkas Bundle | Target Lingkungan | Jalur Instalasi Default | Deskripsi Singkat |
 | :--- | :--- | :--- | :--- |
-| `antigravity-hp-bundle.zip` | Android (Termux) | `~/.gemini/` & `/sdcard/Antigravity/` | Konfigurasi Termux lengkap, 424 skills, GEMINI.md, settings.json, installer shell. |
+| `antigravity-hp-bundle.zip` | Android (Termux) | `~/.gemini/` & `/sdcard/Antigravity/` | Konfigurasi Termux lengkap, 503 skills, GEMINI.md, settings.json, installer shell. |
 | `antigravity-laptop-bundle.zip` | PC / Laptop (Win/macOS/Linux) | `~/.gemini/` (Linux/Mac) atau `%USERPROFILE%\.gemini\` (Win) | Paket desktop untuk Gemini CLI / AGY CLI dengan installer multi-OS (`.bat`, `.ps1`, `.sh`). |
 | `antigravity-hermes-bundle.zip` | Hermes Agent (Nous Research) | `~/.hermes/skills/` & `~/.hermes/SOUL.md` | Konfigurasi runtime Hermes, standard agentskills.io, SOUL.md, dan AGENTS.md. |
 
@@ -71,7 +71,7 @@ Berkas arsip distribusi berada langsung di root repositori:
    .\install.ps1
    ```
    *(Atau klik kanan pada berkas `install.bat` dan pilih **Run as administrator**).*
-4. Konfigurasi dan 424 skills otomatis terpasang pada direktori `C:\Users\<Username>\.gemini\`.
+4. Konfigurasi dan 503 skills otomatis terpasang pada direktori `C:\Users\<Username>\.gemini\`.
 
 ### 2. Instalasi di PC / Laptop (Linux & macOS)
 
@@ -106,23 +106,24 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 ---
 
-## Taksonomi 424 Agent Skills Terpasang
+## Taksonomi 503 Agent Skills Terpasang
 
-Seluruh 424 skills terindeks dan dikelompokkan ke dalam 11 kluster kapabilitas rekayasa:
+Seluruh 503 skills terindeks dan dikelompokkan ke dalam 12 kluster kapabilitas rekayasa:
 
 ```
-424 Skills
-├── 1. Modern UI/UX, Design & Motion Suite (PatternCraft, Transitions.dev, Uiverse, Neat, FeralUI, CodedVisuals, Beautiful UI)
+503 Skills
+├── 1. Modern UI/UX, Design Intelligence & Motion Suite (PatternCraft, Transitions.dev, Uiverse, Neat, FeralUI, CodedVisuals, Beautiful UI, Taste Skill, Hallmark, UUPM, Craftwork, Ryux)
 ├── 2. Security Guardian & Cloudflare Vulnerability Discovery (Cloudflare Security Audit, OWASP Top 10, RTK Security Guardian)
 ├── 3. Backend Architecture, REST/GraphQL & Systems (FastAPI, NestJS, Laravel, Django, Go, Spring Boot, Nakama)
 ├── 4. Database Engineering, Migrations & Analytics (PostgreSQL, MySQL, Prisma, JPA, ClickHouse)
-├── 5. Academic Suite, Indonesian NLP & Naskah (Humanizer-Indonesia, Bahasa Peneliti, Naskah-ID, Zotero, Pencari-Skripsi)
-├── 6. DevOps, Docker Patterns & Git Governance (Docker Multi-Stage, Git Workflow, Conventional Commits)
-├── 7. Multi-Agent Systems, Harness & DevFleet (ECC Orchestration, Claude DevFleet, DMux, Continuous Agent Loops)
-├── 8. Engineering Rigor, Debugging & Refactoring (Investigate First, Systematic Debugging, Surgical Patch, Safe Refactor)
-├── 9. Testing Strategies & TDD (RTK TDD, TDD Rust, E2E Playwright, Browser QA, Go/Python/Kotlin Testing)
-├── 10. Office Automation & Document Engineering (GenOffice: Word .docx, Excel .xlsx, PowerPoint .pptx, PDF)
-└── 11. Efficiency, Token Killer & Anti-Slop (RTK Master, Ponytail, Caveman Voice, Code Simplifier, Performance, Anti-Slop)
+├── 5. Game Development & Multi-Engine Suite (Godot 17 skills, Unity 9 skills, Unreal Engine 5, Web Engines Phaser/Three.js, Ebitengine, Bevy, Love2D, Pygame, Roblox, Defold, Gamedev Router, Game Mechanics, Audio, Level Design, Shaders)
+├── 6. Academic Suite, Indonesian NLP & Naskah (Humanizer-Indonesia, Bahasa Peneliti, Naskah-ID, Zotero, Pencari-Skripsi)
+├── 7. DevOps, Docker Patterns & Git Governance (Docker Multi-Stage, Git Workflow, Conventional Commits)
+├── 8. Multi-Agent Systems, Harness & DevFleet (ECC Orchestration, Claude DevFleet, DMux, Continuous Agent Loops)
+├── 9. Engineering Rigor, Debugging & Refactoring (Investigate First, Systematic Debugging, Surgical Patch, Safe Refactor)
+├── 10. Testing Strategies & TDD (RTK TDD, TDD Rust, E2E Playwright, Browser QA, Go/Python/Kotlin Testing)
+├── 11. Office Automation & Document Engineering (GenOffice: Word .docx, Excel .xlsx, PowerPoint .pptx, PDF)
+└── 12. Efficiency, Token Killer & Anti-Slop (RTK Master, Ponytail, Caveman Voice, Code Simplifier, Performance, Anti-Slop)
 ```
 
 ---
@@ -137,7 +138,7 @@ Lalu ketik perintah bantuan atau status:
 ```
 /skills
 ```
-Pastikan seluruh 424 skills terdeteksi aktif dengan status permission `always-proceed`.
+Pastikan seluruh 503 skills terdeteksi aktif dengan status permission `always-proceed`.
 
 ---
 
@@ -159,6 +160,13 @@ Skrip ini otomatis memvalidasi integritas `SKILL.md`, menyusun ulang `skills.jso
 ## Lisensi & Atribusi
 
 Paket konfigurasi dan kumpulan skill ini mengintegrasikan repositori open-source resmi:
+- [Awesome GameDev Agent Skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) (Multi-Engine & Game Development Agent Skills)
+- [Design Intelligence by RYUX](https://github.com/ryuxdsgn/design-intelligence)
+- [UI UX Pro Max](https://uupm.cc)
+- [Hallmark](https://usehallmark.com)
+- [Taste Skill](https://tasteskill.dev)
+- [Craftwork Design Skills](https://craftwork.design/skills)
+- [Impeccable](https://impeccable.style)
 - [RTK by rtk-ai](https://github.com/rtk-ai/rtk) (Token Killer CLI, Bash Compression Proxy & Engineering Suite)
 - [Cloudflare Security Audit Skill](https://github.com/cloudflare/security-audit-skill)
 - [Superpowers by Obra](https://github.com/obra/superpowers)
