@@ -1,6 +1,6 @@
 # Antigravity Persona & Ecosystem Bundles
 
-Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 636 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
+Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 641 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
 
 Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting**.
 
@@ -8,7 +8,7 @@ Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkunga
 
 ## Ringkasan Fitur Inti
 
-- **636 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, redesain UI vibecoded via Unslop, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, siklus tertutup build-deploy-QA-pentest mobile via Artemis, audit keamanan kerentanan Cloudflare & Strix, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
+- **641 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, skeleton loader zero-CLS via Skullet, redesain UI vibecoded via Unslop, otomasi peramban aktif & Google Workspace via FastMCP Browser, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, siklus tertutup build-deploy-QA-pentest mobile via Artemis, audit keamanan kerentanan Cloudflare & Strix, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
 - **RTK (Rust Token Killer) Suite**: Mesin reduksi token agnostik-agen berbasis proxy Rust berkinerja tinggi (<10ms overhead). Memangkas volume keluaran terminal/bash hingga 90% melalui deduplikasi cerdas, pemfilteran log verbose, dan pelacakan metrik token (`rtk gain`). Didukung 13 modul spesialisasi teknis (TDD, audit keamanan shell, simplifikasi kode, audit PR).
 - **Universal Zero-Prompting**: Agen secara proaktif mendeteksi kebutuhan konteks tugas dan langsung mengaktifkan modul skill relevan tanpa mengharuskan pengguna mendikte pemanggilan skill satu per satu.
 - **Automated Security Audit (Cloudflare Harness & RTK Guardian)**: Penerapan 20 attack classes, validator, dan checklist OWASP Top 10 langsung dari `cloudflare/security-audit-skill` serta RTK security guardian pada setiap penulisan backend, query database, dan formulir.
@@ -106,14 +106,15 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 ---
 
-## Taksonomi 636 Agent Skills Terpasang
+## Taksonomi 641 Agent Skills Terpasang
 
-Seluruh 636 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas rekayasa:
+Seluruh 641 skills terindeks dan dikelompokkan ke dalam 17 kluster kapabilitas rekayasa:
 
 ```
-636 Skills
-├── 1. Modern UI/UX, Design Intelligence & Motion Suite (90 Skills)
+641 Skills
+├── 1. Modern UI/UX, Design Intelligence & Motion Suite (91 Skills)
 │   ├── Unslop (Vibecoded UI Redesign, Quiet Chrome & Craft Intelligence by Damir Sokolovsky)
+│   ├── Skullet (Smart measured skeleton loaders, zero-CLS by Lochie Axon)
 │   ├── PatternCraft, Transitions.dev, Uiverse UI, FireCMS Neat, FeralUI Gradients
 │   ├── CodedVisuals, Beautiful UI, Ryux Design Intelligence, Taste Skill
 │   ├── Hallmark, UI UX Pro Max (192 palettes, 119 UX rules), Craftwork (114 vetted design skills)
@@ -173,9 +174,13 @@ Seluruh 636 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas r
 │   ├── Brand Design MD (86 world-class brand design system references)
 │   ├── Logo Design Skill (Geometric SVG vector generation with 1,400+ curated references)
 │   └── Scrapling (Anti-bot stealth HTTP spider & JS rendering scraping engine)
-└── 16. Office Automation & Domain Productivity (155 Skills)
-    ├── GenOffice (Programmatic Word .docx, Excel .xlsx, PowerPoint .pptx, PDF manipulation)
-    └── Enterprise Business, Legal, Logistics & Domain Task Automation Modules
+├── 16. Office Automation & Domain Productivity (155 Skills)
+│   ├── GenOffice (Programmatic Word .docx, Excel .xlsx, PowerPoint .pptx, PDF manipulation)
+│   └── Enterprise Business, Legal, Logistics & Domain Task Automation Modules
+└── 17. Real-Browser AI Automation & Google Workspace (4 Skills)
+    ├── FastMCP Browser & Using FastMCP Browser (Real Chrome/Firefox automation via loopback WebSocket)
+    ├── Automating Google Docs (Canvas document body direct read/write & workspace tools)
+    └── Automating Google Sheets (Spreadsheet grid A1 cell, formula bar & canvas manipulation)
 ```
 
 ---
@@ -190,7 +195,7 @@ Lalu ketik perintah bantuan atau status:
 ```
 /skills
 ```
-Pastikan seluruh 636 skills terdeteksi aktif dengan status permission `always-proceed`.
+Pastikan seluruh 641 skills terdeteksi aktif dengan status permission `always-proceed`.
 
 ---
 
@@ -212,6 +217,8 @@ Skrip ini otomatis memvalidasi integritas `SKILL.md`, menyusun ulang `skills.jso
 ## Lisensi & Atribusi
 
 Paket konfigurasi dan kumpulan skill ini mengintegrasikan repositori open-source resmi:
+- [Skullet by Lochie Axon](https://skullet.lochie.me) (Smart Skeleton States & Zero CLS Loading)
+- [FastMCP Browser by rayss868](https://github.com/rayss868/fastmcp-browser) (Real-Browser MCP Automation & Google Workspace Engine)
 - [Unslop by heydamir](https://github.com/heydamir/unslop) (Vibecoded UI Redesign & Craft Intelligence by Damir Sokolovsky)
 - [SANITY by verycoolapps](https://github.com/verycoolapps/sanity-anti-hallucination-skill) (SANITY v3.0 Anti-Hallucination & Security Supremacy Protocol)
 - [Blender Skills by arjun988](https://github.com/arjun988/blender-skills) (Complete 95-Skill 3D Modeling, Shading, Rigging & Engine Export Pipeline)
