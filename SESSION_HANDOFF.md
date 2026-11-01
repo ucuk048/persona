@@ -22,13 +22,14 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 
 ## 2. Ringkasan Eksekutif & Status Terkini Proyek
 
-### A. Ekosistem Antigravity & Persona (635 Skills, 16 Kluster)
+### A. Ekosistem Antigravity & Persona (636 Skills, 16 Kluster)
 - **Triad Persona Terkunci Permanen**:
   - **Ponytail (FULL)**: *Lazy Senior Dev Mindset* (YAGNI, codebase reuse, standard library first, diff minimal).
   - **Caveman Voice (FULL)**: *Token Killer Voice* (`[Objek] [Tindakan] [Alasan]. [Langkah berikutnya].`).
   - **RTK Engine (FULL)**: *Rust Token Killer & Bash Compression Proxy* (pemangkasan output shell hingga 90%, pengawasan kuota konteks via `rtk gain`, dan orkestrasi 13 modular skills RTK).
 - **Protokol Inti Aktif**:
   - **Universal Zero-Prompting Mutlak**: Seluruh domain (Frontend, Backend, Database, Security, Academic, Gamedev, 3D Blender, DevOps, Office, Scraping, Mobile Testing) aktif otomatis tanpa mendikte pemanggilan skill.
+  - **Modern UI/UX & Craft Redesign**: Suite lengkap UI/UX modern dipadukan dengan `unslop` (redesain UI vibecoded, quiet chrome, deliberate spacing, dan visual hero berkarakter dari Damir Sokolovsky).
   - **Autonomous Mobile QA & Pentest Remediation**: Artemis suite (build APK, auto-deploy ADB, eksplorasi fitur menyeluruh ala Senior QA, audit OWASP Mobile Top 10, dan pembuatan DEFECT_LEDGER untuk auto-fix surgical-patch Antigravity).
   - **Epistemic Integrity & Security Supremacy**: SANITY v3.0 Protocol (anti-halusinasi militer, 10 pilar integritas epistemik, eliminasi phantom functions & ghost files, sitasi sebelum asersi).
   - **3D Modeling & Blender Pipeline**: 95 skills lengkap (Character Artist, Environment Artist, Hard Surface, Sculpting, Retopology, UV, Shaders, Rigging, Animation, dan Game Exporters ke Godot, Unity, Unreal).
@@ -70,7 +71,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
     chmod +x install.sh
     ./install.sh
     ```
-- *Hasil instalasi*: Seluruh **635 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
+- *Hasil instalasi*: Seluruh **636 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
 
 ---
 
@@ -81,7 +82,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 | `antigravity-laptop-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk PC/Laptop (~21.8 MB) |
 | `antigravity-hp-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk Android Termux (~21.7 MB) |
 | `antigravity-hermes-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi Hermes Agent standard agentskills.io (~21.8 MB) |
-| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 635 skills & 16 kluster |
+| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 636 skills & 16 kluster |
 | `AGY_COMMANDS.md` | Di dalam bundle laptop / HP | Buku panduan perintah cepat CLI & skill |
 | `GEMINI.md` | `laptop_bundle/config/GEMINI.md` | Aturan sistem desktop (bebas path HP) |
 
@@ -93,7 +94,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 ```text
 Halo! Saya melanjutkan sesi kerja dari HP (Android Termux) ke Laptop.
-Seluruh konfigurasi sistem, 635 skills (16 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
+Seluruh konfigurasi sistem, 636 skills (16 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
 
 Instruksi Onboarding Instan di Laptop:
 1. Konfirmasi bahwa Anda telah mengenali persona inti yang terkunci permanen:
