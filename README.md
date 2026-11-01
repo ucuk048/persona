@@ -1,6 +1,6 @@
 # Antigravity Persona & Ecosystem Bundles
 
-Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 634 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
+Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 635 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
 
 Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting**.
 
@@ -8,7 +8,7 @@ Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkunga
 
 ## Ringkasan Fitur Inti
 
-- **634 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
+- **635 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, siklus tertutup build-deploy-QA-pentest mobile via Artemis, audit keamanan kerentanan Cloudflare & Strix, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
 - **RTK (Rust Token Killer) Suite**: Mesin reduksi token agnostik-agen berbasis proxy Rust berkinerja tinggi (<10ms overhead). Memangkas volume keluaran terminal/bash hingga 90% melalui deduplikasi cerdas, pemfilteran log verbose, dan pelacakan metrik token (`rtk gain`). Didukung 13 modul spesialisasi teknis (TDD, audit keamanan shell, simplifikasi kode, audit PR).
 - **Universal Zero-Prompting**: Agen secara proaktif mendeteksi kebutuhan konteks tugas dan langsung mengaktifkan modul skill relevan tanpa mengharuskan pengguna mendikte pemanggilan skill satu per satu.
 - **Automated Security Audit (Cloudflare Harness & RTK Guardian)**: Penerapan 20 attack classes, validator, dan checklist OWASP Top 10 langsung dari `cloudflare/security-audit-skill` serta RTK security guardian pada setiap penulisan backend, query database, dan formulir.
@@ -106,12 +106,12 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 ---
 
-## Taksonomi 634 Agent Skills Terpasang
+## Taksonomi 635 Agent Skills Terpasang
 
-Seluruh 634 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas rekayasa:
+Seluruh 635 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas rekayasa:
 
 ```
-634 Skills
+635 Skills
 ├── 1. Modern UI/UX, Design Intelligence & Motion Suite (89 Skills)
 │   ├── PatternCraft, Transitions.dev, Uiverse UI, FireCMS Neat, FeralUI Gradients
 │   ├── CodedVisuals, Beautiful UI, Ryux Design Intelligence, Taste Skill
@@ -163,7 +163,8 @@ Seluruh 634 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas r
 ├── 13. Testing Strategies & TDD (25 Skills)
 │   ├── RTK TDD & Rust TDD (Arrange-Act-Assert, snapshot assertions)
 │   └── Multi-Stack Unit & Integration Testing (PyTest, Pest, JUnit 5, Go, xUnit, Playwright E2E)
-├── 14. Mobile, Android Reverse Engineering & Hardware (7 Skills)
+├── 14. Mobile, Android Reverse Engineering & Hardware (8 Skills)
+│   ├── Artemis Mobile QA & Pentest (Autonomous build, deploy, QA exploration, OWASP Mobile audit, closed-loop bugfix)
 │   ├── Android Reverse Engineering (JADX decompilation, network tracing, endpoint extraction)
 │   └── Android TV Detox, React Native & Mobile Layout Ergonomics
 ├── 15. AI Memory Continuity, Brand Systems & Scrapers (10 Skills)
@@ -188,7 +189,7 @@ Lalu ketik perintah bantuan atau status:
 ```
 /skills
 ```
-Pastikan seluruh 634 skills terdeteksi aktif dengan status permission `always-proceed`.
+Pastikan seluruh 635 skills terdeteksi aktif dengan status permission `always-proceed`.
 
 ---
 
