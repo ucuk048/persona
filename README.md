@@ -1,6 +1,6 @@
 # Antigravity Persona & Ecosystem Bundles
 
-Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 633 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
+Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 634 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
 
 Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting**.
 
@@ -8,7 +8,7 @@ Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkunga
 
 ## Ringkasan Fitur Inti
 
-- **633 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
+- **634 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, audit keamanan kerentanan Cloudflare, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
 - **RTK (Rust Token Killer) Suite**: Mesin reduksi token agnostik-agen berbasis proxy Rust berkinerja tinggi (<10ms overhead). Memangkas volume keluaran terminal/bash hingga 90% melalui deduplikasi cerdas, pemfilteran log verbose, dan pelacakan metrik token (`rtk gain`). Didukung 13 modul spesialisasi teknis (TDD, audit keamanan shell, simplifikasi kode, audit PR).
 - **Universal Zero-Prompting**: Agen secara proaktif mendeteksi kebutuhan konteks tugas dan langsung mengaktifkan modul skill relevan tanpa mengharuskan pengguna mendikte pemanggilan skill satu per satu.
 - **Automated Security Audit (Cloudflare Harness & RTK Guardian)**: Penerapan 20 attack classes, validator, dan checklist OWASP Top 10 langsung dari `cloudflare/security-audit-skill` serta RTK security guardian pada setiap penulisan backend, query database, dan formulir.
@@ -106,12 +106,12 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 ---
 
-## Taksonomi 633 Agent Skills Terpasang
+## Taksonomi 634 Agent Skills Terpasang
 
-Seluruh 633 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas rekayasa:
+Seluruh 634 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas rekayasa:
 
 ```
-633 Skills
+634 Skills
 ├── 1. Modern UI/UX, Design Intelligence & Motion Suite (89 Skills)
 │   ├── PatternCraft, Transitions.dev, Uiverse UI, FireCMS Neat, FeralUI Gradients
 │   ├── CodedVisuals, Beautiful UI, Ryux Design Intelligence, Taste Skill
@@ -135,7 +135,8 @@ Seluruh 633 skills terindeks dan dikelompokkan ke dalam 16 kluster kapabilitas r
 ├── 5. Video Engineering, Audio & Demo Walkthrough (2 Skills)
 │   ├── FFmpeg Suite (Deterministic local editing: cut, join, 9:16 reframe, captions, LUFS, HDR/SDR)
 │   └── Video Demo (Playwright browser walkthrough recording with natural pacing & visible cursor)
-├── 6. Security Guardian & Advanced Pentesting / OWASP 2025 (28 Skills)
+├── 6. Security Guardian, Epistemic Integrity & OWASP 2025 (29 Skills)
+│   ├── SANITY v3.0 Protocol (Anti-Hallucination & Military-Grade Code Security Supremacy, 10 Epistemic Pillars)
 │   ├── Strix Pentesting Suite (9 skills: OWASP Top 10:2025, API & Web App Security Testing, CI Scanning)
 │   ├── Cloudflare Vulnerability Discovery Harness (Official Cloudflare 20 attack classes)
 │   └── Security Guardian, Security Review & RTK Shell Escaping Hardening
@@ -187,7 +188,7 @@ Lalu ketik perintah bantuan atau status:
 ```
 /skills
 ```
-Pastikan seluruh 633 skills terdeteksi aktif dengan status permission `always-proceed`.
+Pastikan seluruh 634 skills terdeteksi aktif dengan status permission `always-proceed`.
 
 ---
 
@@ -209,6 +210,7 @@ Skrip ini otomatis memvalidasi integritas `SKILL.md`, menyusun ulang `skills.jso
 ## Lisensi & Atribusi
 
 Paket konfigurasi dan kumpulan skill ini mengintegrasikan repositori open-source resmi:
+- [SANITY by verycoolapps](https://github.com/verycoolapps/sanity-anti-hallucination-skill) (SANITY v3.0 Anti-Hallucination & Security Supremacy Protocol)
 - [Blender Skills by arjun988](https://github.com/arjun988/blender-skills) (Complete 95-Skill 3D Modeling, Shading, Rigging & Engine Export Pipeline)
 - [Replica Skill by Jakeschincariol](https://github.com/Jakeschincariol/replica-skill) (Autonomous Full-Stack System Replication & Web App Reverse Engineering)
 - [Strix by usestrix](https://github.com/usestrix/strix) (Autonomous Application Security & OWASP Top 10:2025 Testing Harness)

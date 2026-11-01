@@ -6,8 +6,8 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 ---
 
 ## 1. Metadata Sesi & Lingkungan Asal
-- **Waktu Penyusunan**: 2026-10-30 22:55:00 (WITA / UTC+8)
-- **ID Percakapan Asal**: `4382c1e2-4130-45a5-844b-04b66a2f0981`
+- **Waktu Penyusunan**: 2026-11-01 18:55:00 (WITA / UTC+8)
+- **ID Percakapan Asal**: `bfd86119-bc01-42b1-8fe8-09e516fbe2c3`
 - **Model / Provider Asal**: Google Gemini 3.8 Flash (High) via Antigravity CLI (AGY)
 - **Perangkat Asal**: Android Termux (Linux aarch64)
 - **Perangkat Tujuan**: Laptop / PC (Windows, macOS, atau Linux)
@@ -22,13 +22,14 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 
 ## 2. Ringkasan Eksekutif & Status Terkini Proyek
 
-### A. Ekosistem Antigravity & Persona (633 Skills, 16 Kluster)
+### A. Ekosistem Antigravity & Persona (634 Skills, 16 Kluster)
 - **Triad Persona Terkunci Permanen**:
   - **Ponytail (FULL)**: *Lazy Senior Dev Mindset* (YAGNI, codebase reuse, standard library first, diff minimal).
   - **Caveman Voice (FULL)**: *Token Killer Voice* (`[Objek] [Tindakan] [Alasan]. [Langkah berikutnya].`).
   - **RTK Engine (FULL)**: *Rust Token Killer & Bash Compression Proxy* (pemangkasan output shell hingga 90%, pengawasan kuota konteks via `rtk gain`, dan orkestrasi 13 modular skills RTK).
 - **Protokol Inti Aktif**:
   - **Universal Zero-Prompting Mutlak**: Seluruh domain (Frontend, Backend, Database, Security, Academic, Gamedev, 3D Blender, DevOps, Office, Scraping) aktif otomatis tanpa mendikte pemanggilan skill.
+  - **Epistemic Integrity & Security Supremacy**: SANITY v3.0 Protocol (anti-halusinasi militer, 10 pilar integritas epistemik, eliminasi phantom functions & ghost files, sitasi sebelum asersi).
   - **3D Modeling & Blender Pipeline**: 95 skills lengkap (Character Artist, Environment Artist, Hard Surface, Sculpting, Retopology, UV, Shaders, Rigging, Animation, dan Game Exporters ke Godot, Unity, Unreal).
   - **Game Development 12 Engine**: 78 skills (Godot, Unity, Unreal Engine 5, Phaser, Three.js, Bevy, Love2D, Pygame, Roblox, Defold, Mechanics, AI, Level Design).
   - **Application Re-engineering & Replication**: Replica suite (11 skills), Clone Website, Huashu Design (84 gaya visual), Scrapling, dan Android Reverse Engineering (JADX).
@@ -68,7 +69,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
     chmod +x install.sh
     ./install.sh
     ```
-- *Hasil instalasi*: Seluruh **633 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
+- *Hasil instalasi*: Seluruh **634 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
 
 ---
 
@@ -79,7 +80,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 | `antigravity-laptop-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk PC/Laptop (~21.8 MB) |
 | `antigravity-hp-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk Android Termux (~21.7 MB) |
 | `antigravity-hermes-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi Hermes Agent standard agentskills.io (~21.8 MB) |
-| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 633 skills & 16 kluster |
+| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 634 skills & 16 kluster |
 | `AGY_COMMANDS.md` | Di dalam bundle laptop / HP | Buku panduan perintah cepat CLI & skill |
 | `GEMINI.md` | `laptop_bundle/config/GEMINI.md` | Aturan sistem desktop (bebas path HP) |
 
@@ -91,7 +92,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 ```text
 Halo! Saya melanjutkan sesi kerja dari HP (Android Termux) ke Laptop.
-Seluruh konfigurasi sistem, 633 skills (16 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
+Seluruh konfigurasi sistem, 634 skills (16 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
 
 Instruksi Onboarding Instan di Laptop:
 1. Konfirmasi bahwa Anda telah mengenali persona inti yang terkunci permanen:
