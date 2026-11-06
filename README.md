@@ -17,6 +17,7 @@ Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkunga
 - **Persona Terkunci Permanen**:
   - **Ponytail (FULL)**: *Lazy Senior Dev Mindset* (YAGNI, pemanfaatan ulang basis kode, standard library first, minimal blast radius diff).
   - **Caveman Voice & RTK (FULL)**: *Token Killer Mode* (`[Objek] [Tindakan] [Alasan]. [Langkah berikutnya].`) guna menjaga context window tetap efisien dan bebas fluff.
+  - **Cyberheroes AI (FULL)**: *Quantum Zero Day* (riset mitigasi kriptografi pasca-kuantum PQC, evaluasi ketahanan terhadap algoritma Shor/Grover, dan audit kerentanan zero-day defensif).
 
 ---
 
