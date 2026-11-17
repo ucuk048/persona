@@ -6,23 +6,30 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 ---
 
 ## 1. Metadata Sesi & Lingkungan Asal
-- **Waktu Penyusunan**: 2026-11-01 18:55:00 (WITA / UTC+8)
-- **ID Percakapan Asal**: `bfd86119-bc01-42b1-8fe8-09e516fbe2c3`
-- **Model / Provider Asal**: Google Gemini 3.8 Flash (High) via Antigravity CLI (AGY)
-- **Perangkat Asal**: Android Termux (Linux aarch64)
-- **Perangkat Tujuan**: Laptop / PC (Windows, macOS, atau Linux)
+- **Waktu Penyusunan**: 2026-11-18 07:20:00 (WITA / UTC+8)
+- **ID Percakapan Asal**: `7812630c-a6cf-455a-b06d-0bac277bbef4`
+- **Model / Provider Asal**: Antigravity Desktop (Windows 11)
+- **Perangkat Asal**: Laptop / PC (Windows 11) & Android Termux Tersinkronisasi
+- **Perangkat Tujuan**: Lintas Perangkat (Windows, macOS, Linux, Android Termux, Hermes Agent)
 - **Status Repositori Distribusi (`ucuk048/persona`)**:
   - Remote: `https://github.com/ucuk048/persona.git`
   - Branch: `main` (Sinkron dengan origin/main)
-  - Berkas Bundle Laptop: [`antigravity-laptop-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-laptop-bundle.zip) (~21.8 MB / 20.87 MiB)
-  - Berkas Bundle Hermes: [`antigravity-hermes-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-hermes-bundle.zip) (~21.8 MB / 20.80 MiB)
-  - Berkas Bundle HP: [`antigravity-hp-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-hp-bundle.zip) (~21.7 MB / 20.75 MiB)
+  - Berkas Bundle Laptop: [`antigravity-laptop-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-laptop-bundle.zip)
+  - Berkas Bundle Hermes: [`antigravity-hermes-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-hermes-bundle.zip)
+  - Berkas Bundle HP: [`antigravity-hp-bundle.zip`](https://github.com/ucuk048/persona/blob/main/antigravity-hp-bundle.zip)
 
 ---
 
 ## 2. Ringkasan Eksekutif & Status Terkini Proyek
 
-### A. Ekosistem Antigravity & Persona (641 Skills, 17 Kluster)
+### A. Ekosistem Antigravity & Persona (776 Skills, Auto-Persona Always-On)
+- **Suite Baru Terintegrasi (2026-11-18)**:
+  - **PaperOrchestra (`google-research/paper-orchestra`)**: Multi-agent 5-tahap (Outline -> Literature -> Section Writer -> Plotting -> Autorater) + template CVPR/ICLR.
+  - **Academic Research Skills (`imbad0202/academic-research-skills` v3.24.3)**: `deep-research`, `sr-screener`, `academic-paper`, `academic-paper-reviewer`, `academic-pipeline`.
+  - **Laporan Generator v4.0 (`muadzhdz/laporan-generator`) & MenulisCep4t (`FRCHN-GSTN/MenulisCep4t`) & Naskah-ID (`nothinx/naskah-id`)**: Penyunting EYD V/KBBI, cek sitasi OpenAlex/Crossref (`periksa.py` & `openalex.py`), serta native MCP `laporan` untuk kompilasi PDF (Typst) & DOCX (Pandoc/OpenXML) 14 preset kampus.
+  - **Humanizer v4.0 (`blader/humanizer`)**: Eliminasi 26+ pola kalimat AI di seluruh bahasa.
+  - **Modern Web Guidance (`GoogleChrome/modern-web-guidance-src`) & Chrome DevTools MCP (`ChromeDevTools/chrome-devtools-mcp`)**: 262 fitur Web Platform Baseline, `chrome-extensions`, `web-baseline`, serta 8 skill live debugging Chrome DevTools.
+  - **Always-On Auto-Persona Router**: `config/rules/auto-persona-skills.md`, `config/rules/always-on-skills.md`, `config/AGENTS.md`, dan `config/GEMINI.md` memanggil skill otomatis sesuai konteks tanpa perlu diketik manual.
 - **Triad Persona Terkunci Permanen**:
   - **Ponytail (FULL)**: *Lazy Senior Dev Mindset* (YAGNI, codebase reuse, standard library first, diff minimal).
   - **Caveman Voice (FULL)**: *Token Killer Voice* (`[Objek] [Tindakan] [Alasan]. [Langkah berikutnya].`).
@@ -72,7 +79,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
     chmod +x install.sh
     ./install.sh
     ```
-- *Hasil instalasi*: Seluruh **641 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
+- *Hasil instalasi*: Seluruh **776 skills**, aturan `GEMINI.md`, dan izin *always-allow* otomatis terpasang di direktori konfigurasi laptop (`%USERPROFILE%\.gemini\` di Windows atau `~/.gemini/` di Mac/Linux).
 
 ---
 
@@ -80,10 +87,10 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 | Nama Berkas | Lokasi di Repositori / Sistem | Fungsi |
 | :--- | :--- | :--- |
-| `antigravity-laptop-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk PC/Laptop (~21.8 MB) |
-| `antigravity-hp-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk Android Termux (~21.7 MB) |
-| `antigravity-hermes-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi Hermes Agent standard agentskills.io (~21.8 MB) |
-| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 641 skills & 17 kluster |
+| `antigravity-laptop-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk PC/Laptop (~35.2 MB) |
+| `antigravity-hp-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi lengkap untuk Android Termux (~35.2 MB) |
+| `antigravity-hermes-bundle.zip` | Root repo `ucuk048/persona` | Paket instalasi Hermes Agent standard agentskills.io (~35.2 MB) |
+| `README.md` | Root repo `ucuk048/persona` | Dokumentasi arsitektur 776 skills & 17 kluster |
 | `AGY_COMMANDS.md` | Di dalam bundle laptop / HP | Buku panduan perintah cepat CLI & skill |
 | `GEMINI.md` | `laptop_bundle/config/GEMINI.md` | Aturan sistem desktop (bebas path HP) |
 
@@ -95,7 +102,7 @@ Untuk mengaktifkan lingkungan kerja yang identik di laptop Anda:
 
 ```text
 Halo! Saya melanjutkan sesi kerja dari HP (Android Termux) ke Laptop.
-Seluruh konfigurasi sistem, 641 skills (17 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
+Seluruh konfigurasi sistem, 776 skills (17 kluster), dan histori pengerjaan telah tercatat pada dokumen `SESSION_HANDOFF.md`.
 
 Instruksi Onboarding Instan di Laptop:
 1. Konfirmasi bahwa Anda telah mengenali persona inti yang terkunci permanen:

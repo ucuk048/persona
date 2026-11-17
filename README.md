@@ -1,14 +1,14 @@
 # Antigravity Persona & Ecosystem Bundles
 
-Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 641 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
+Repositori resmi distribusi bundle persona, konfigurasi sistem, dan 776 production-grade AI agent skills untuk ekosistem **Antigravity CLI (AGY)** dan **Hermes Agent**.
 
-Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting**.
+Repositori ini menyediakan paket siap pasang (*turnkey bundles*) untuk lingkungan **Android (Termux)**, **Desktop/Laptop (Windows, macOS, Linux)**, dan **Hermes Agent (Nous Research)** dengan konfigurasi *always-allow*, persona terkalibrasi, engine optimasi token **RTK**, serta protokol **Universal Zero-Prompting & Auto-Persona Routing**.
 
 ---
 
 ## Ringkasan Fitur Inti
 
-- **641 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak—mulai dari arsitektur backend, modern UI/UX & motion physics, skeleton loader zero-CLS via Skullet, redesain UI vibecoded via Unslop, otomasi peramban aktif & Google Workspace via FastMCP Browser, game development 12 engine (Godot, Unity, Unreal, Phaser, Three.js, dll.), manipulasi video & audio deterministik via FFmpeg Suite, perekaman demo via Playwright, siklus tertutup build-deploy-QA-pentest mobile via Artemis, audit keamanan kerentanan Cloudflare & Strix, engine optimasi token RTK, manipulasi dokumen Office via GenOffice, hingga penulisan naskah akademik berbahasa Indonesia.
+- **776 Agent Skills Siap Pakai**: Mencakup seluruh siklus rekayasa perangkat lunak, riset ilmiah internasional, dan penyusunan dokumen akademik: arsitektur backend, modern UI/UX & motion physics, Tier-1 Enterprise Design & `shadcn/ui`, skeleton loader zero-CLS via Skullet, redesain UI vibecoded via Unslop, panduan Web Platform Baseline via GoogleChrome Modern Web Guidance, live debugging browser via Chrome DevTools MCP (8 skills), otomasi peramban aktif & Google Workspace via FastMCP Browser, game development 12 engine, Blender 3D 95 skills, ComfyUI DAG & DeepMind Science Suite, FFmpeg Suite, QA-pentest mobile via Artemis, audit kerentanan Cloudflare & Strix, engine optimasi token RTK, manipulasi Office via GenOffice, orkestrasi riset & paper ilmiah internasional via Google Research PaperOrchestra + Academic Research Skills (v3.24.3), penghalusan prosa via Blader Humanizer v4.0, hingga penulisan & kompilasi skripsi/laporan kampus Indonesia (PDF Typst & DOCX Pandoc) via Laporan Generator v4.0, MenulisCep4t, dan Naskah-ID.
 - **RTK (Rust Token Killer) Suite**: Mesin reduksi token agnostik-agen berbasis proxy Rust berkinerja tinggi (<10ms overhead). Memangkas volume keluaran terminal/bash hingga 90% melalui deduplikasi cerdas, pemfilteran log verbose, dan pelacakan metrik token (`rtk gain`). Didukung 13 modul spesialisasi teknis (TDD, audit keamanan shell, simplifikasi kode, audit PR).
 - **Universal Zero-Prompting**: Agen secara proaktif mendeteksi kebutuhan konteks tugas dan langsung mengaktifkan modul skill relevan tanpa mengharuskan pengguna mendikte pemanggilan skill satu per satu.
 - **Automated Security Audit (Cloudflare Harness & RTK Guardian)**: Penerapan 20 attack classes, validator, dan checklist OWASP Top 10 langsung dari `cloudflare/security-audit-skill` serta RTK security guardian pada setiap penulisan backend, query database, dan formulir.
@@ -55,7 +55,7 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 | Berkas Bundle | Target Lingkungan | Jalur Instalasi Default | Deskripsi Singkat |
 | :--- | :--- | :--- | :--- |
-| `antigravity-hp-bundle.zip` | Android (Termux) | `~/.gemini/` & `/sdcard/Antigravity/` | Konfigurasi Termux lengkap, 633 skills, GEMINI.md, settings.json, installer shell. |
+| `antigravity-hp-bundle.zip` | Android (Termux) | `~/.gemini/` & `/sdcard/Antigravity/` | Konfigurasi Termux lengkap, 776 skills, GEMINI.md, settings.json, installer shell. |
 | `antigravity-laptop-bundle.zip` | PC / Laptop (Win/macOS/Linux) | `~/.gemini/` (Linux/Mac) atau `%USERPROFILE%\.gemini\` (Win) | Paket desktop untuk Gemini CLI / AGY CLI dengan installer multi-OS (`.bat`, `.ps1`, `.sh`). |
 | `antigravity-hermes-bundle.zip` | Hermes Agent (Nous Research) | `~/.hermes/skills/` & `~/.hermes/SOUL.md` | Konfigurasi runtime Hermes, standard agentskills.io, SOUL.md, dan AGENTS.md. |
 
@@ -72,7 +72,7 @@ Berkas arsip distribusi berada langsung di root repositori:
    .\install.ps1
    ```
    *(Atau klik kanan pada berkas `install.bat` dan pilih **Run as administrator**).*
-4. Konfigurasi dan 633 skills otomatis terpasang pada direktori `C:\Users\<Username>\.gemini\`.
+4. Konfigurasi dan 776 skills otomatis terpasang pada direktori `C:\Users\<Username>\.gemini\`.
 
 ### 2. Instalasi di PC / Laptop (Linux & macOS)
 
@@ -107,12 +107,12 @@ Berkas arsip distribusi berada langsung di root repositori:
 
 ---
 
-## Taksonomi 641 Agent Skills Terpasang
+## Taksonomi 776 Agent Skills Terpasang
 
-Seluruh 641 skills terindeks dan dikelompokkan ke dalam 17 kluster kapabilitas rekayasa:
+Seluruh 776 skills terindeks dan dikelompokkan ke dalam 17 kluster kapabilitas rekayasa:
 
 ```
-641 Skills
+776 Skills
 ├── 1. Modern UI/UX, Design Intelligence & Motion Suite (91 Skills)
 │   ├── Unslop (Vibecoded UI Redesign, Quiet Chrome & Craft Intelligence by Damir Sokolovsky)
 │   ├── Skullet (Smart measured skeleton loaders, zero-CLS by Lochie Axon)
@@ -196,7 +196,7 @@ Lalu ketik perintah bantuan atau status:
 ```
 /skills
 ```
-Pastikan seluruh 641 skills terdeteksi aktif dengan status permission `always-proceed`.
+Pastikan seluruh 776 skills terdeteksi aktif dengan status permission `always-proceed`.
 
 ---
 
@@ -218,6 +218,14 @@ Skrip ini otomatis memvalidasi integritas `SKILL.md`, menyusun ulang `skills.jso
 ## Lisensi & Atribusi
 
 Paket konfigurasi dan kumpulan skill ini mengintegrasikan repositori open-source resmi:
+- [PaperOrchestra by Google Research](https://github.com/google-research/paper-orchestra) (Multi-Agent Framework for Automated AI Research Paper Writing)
+- [Chrome DevTools MCP by ChromeDevTools](https://github.com/ChromeDevTools/chrome-devtools-mcp) (Official Chrome DevTools MCP & 8 Live Debugging/Performance Skills)
+- [Academic Research Skills by Imbad0202](https://github.com/imbad0202/academic-research-skills) (Contract-Audited 5-Skill Academic Research, Writing & Peer-Review Pipeline v3.24.3)
+- [Modern Web Guidance by GoogleChrome](https://github.com/GoogleChrome/modern-web-guidance-src) (262 Modern Web Platform Features, 204 Guides, Chrome Extensions & Baseline Status)
+- [Laporan Generator by muadzhdz](https://github.com/muadzhdz/laporan-generator) (Universal Indonesian Campus Thesis/Report Engine v4.0 with Native MCP, Typst PDF & Pandoc DOCX)
+- [MenulisCep4t by FRCHN-GSTN](https://github.com/FRCHN-GSTN/MenulisCep4t) (Indonesian Academic Document Engine, EYD V Proofreading & Citation Verification)
+- [Naskah-ID by nothinx](https://github.com/nothinx/naskah-id) (Indonesian Scientific Writing, EYD V, KBBI & OpenAlex/Crossref Verification)
+- [Humanizer by blader](https://github.com/blader/humanizer) (Humanizer v4.0 AI Writing Pattern Removal Engine)
 - [Skullet by Lochie Axon](https://skullet.lochie.me) (Smart Skeleton States & Zero CLS Loading)
 - [FastMCP Browser by rayss868](https://github.com/rayss868/fastmcp-browser) (Real-Browser MCP Automation & Google Workspace Engine)
 - [Unslop by heydamir](https://github.com/heydamir/unslop) (Vibecoded UI Redesign & Craft Intelligence by Damir Sokolovsky)
