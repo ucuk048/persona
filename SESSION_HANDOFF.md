@@ -22,7 +22,7 @@ Dokumen ini disusun otomatis menggunakan skill `session-handoff` untuk menjamin 
 
 ## 2. Ringkasan Eksekutif & Status Terkini Proyek
 
-### A. Ekosistem Antigravity & Persona (776 Skills, Auto-Persona Always-On)
+### A. Ekosistem Antigravity & Persona (776 Skills, 36 Plugins, 18 MCP Endpoints, Auto-Persona Always-On)
 - **Suite Baru Terintegrasi (2026-11-18)**:
   - **PaperOrchestra (`google-research/paper-orchestra`)**: Multi-agent 5-tahap (Outline -> Literature -> Section Writer -> Plotting -> Autorater) + template CVPR/ICLR.
   - **Academic Research Skills (`imbad0202/academic-research-skills` v3.24.3)**: `deep-research`, `sr-screener`, `academic-paper`, `academic-paper-reviewer`, `academic-pipeline`.
